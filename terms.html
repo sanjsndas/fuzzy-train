@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms & Conditions | Greenhatchery Care</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-green: #3a5a40;
+            --secondary-green: #588157;
+            --light-green: #a3b18a;
+            --cream: #dad7cd;
+            --dark-text: #344e41;
+        }
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+            color: #333;
+            line-height: 1.6;
+            background-color: var(--cream);
+        }
+        
+        h1, h2, h3, h4 {
+            font-family: 'Playfair Display', serif;
+            color: var(--primary-green);
+        }
+        
+        .header-bg {
+            background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(58, 90, 64, 0.85)), url('p2.jpeg');
+            background-size: cover;
+            background-position: center;
+            min-height: 70vh;
+        }
+        
+        .nav-link {
+            position: relative;
+        }
+        
+        .nav-link:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: var(--light-green);
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover:after {
+            width: 100%;
+        }
+        
+        .term-point {
+            margin-bottom: 2rem;
+        }
+        
+        .term-point h3 {
+            color: var(--primary-green);
+            margin-bottom: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-24 items-center">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <div class="flex items-center">
+                            <i class="fas fa-seedling text-4xl text-green-700 mr-2"></i>
+                            <span class="text-2xl font-bold text-green-800">Greenhatchery Care</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hidden md:ml-6 md:flex md:space-x-8">
+                    <a href="index.html" tabindex="0" class="nav-link px-3 py-2 text-lg font-medium text-gray-500 hover:text-green-700">Home</a>
+                    <a href="privacy.html" tabindex="0" class="nav-link px-3 py-2 text-lg font-medium text-gray-500 hover:text-green-700">Privacy</a>
+                    <a href="terms.html" tabindex="0" aria-current="page" class="nav-link px-3 py-2 text-lg font-medium text-green-800 border-b-2 border-green-500">Terms & conditions</a>
+                    <a href="cookies.html" tabindex="0" class="nav-link px-3 py-2 text-lg font-medium text-gray-500 hover:text-green-700">Cookies</a>
+                    <a href="contact.html" tabindex="0" class="nav-link px-3 py-2 text-lg font-medium text-gray-500 hover:text-green-700">Contact us</a>
+                </div>
+                <div class="-mr-2 flex items-center md:hidden">
+                    <button type="button" class="mobile-menu-button inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-green-500">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="mobile-menu hidden md:hidden">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="index.html" tabindex="0" class="block px-3 py-2 text-base font-medium text-gray-500 hover:text-green-700 hover:bg-green-50 rounded-md">Home</a>
+                <a href="privacy.html" tabindex="0" class="block px-3 py-2 text-base font-medium text-gray-500 hover:text-green-700 hover:bg-green-50 rounded-md">Privacy</a>
+                <a href="terms.html" tabindex="0" aria-current="page" class="block px-3 py-2 text-base font-medium text-green-800 bg-green-50 rounded-md">Terms & conditions</a>
+                <a href="cookies.html" tabindex="0" class="block px-3 py-2 text-base font-medium text-gray-500 hover:text-green-700 hover:bg-green-50 rounded-md">Cookies</a>
+                <a href="contact.html" tabindex="0" class="block px-3 py-2 text-base font-medium text-gray-500 hover:text-green-700 hover:bg-green-50 rounded-md">Contact us</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="header-bg text-white flex items-center">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 text-center">
+            <h1 class="text-5xl md:text-7xl font-bold mb-6">Terms & Conditions</h1>
+            <p class="text-xl md:text-2xl mb-8">The legal agreement between you and Greenhatchery Care governing use of our services</p>
+        </div>
+    </header>
+
+    <!-- Terms Content -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="prose lg:prose-xl mx-auto">
+                <p class="text-xl mb-12">Welcome to Greenhatchery Care. These Terms and Conditions outline the rules and regulations for the use of our website and services. By accessing this website, we assume you accept these terms in full. If you disagree with any part of these terms, please do not use our website.</p>
+                
+                <div class="term-point">
+                    <h3>1. Acceptance of Terms</h3>
+                    <p>By accessing or using our services, you agree to be bound by these Terms and Conditions, all applicable laws and regulations, and agree that you are responsible for compliance with any applicable local laws. If you do not agree with any of these terms, you are prohibited from using or accessing this site. The materials contained in this website are protected by applicable copyright and trademark law. Your continued use of our services constitutes ongoing agreement to these terms.</p>
+                </div>
+                
+                <div class="term-point">
+                    <h3>2. Service Description</h3>
+                    <p>Greenhatchery Care provides gardening consultation services, educational content, and related products through our website and mobile applications. We reserve the right to modify or discontinue the Service (or any part thereof) with or without notice. Services are offered subject to our acceptance of your order or request, which we may accept or decline for any reason. Some services may not be available in all geographic locations, and we may impose geographic restrictions on certain services at our discretion.</p>
+                </div>
+                
+                <div class="term-point">
+                    <h3>3. User Accounts</h3>
+                    <p>To access certain features of our service, you may be required to create an account. You must provide accurate and complete information during registration and keep this information current. You are responsible for maintaining the confidentiality of your account credentials and for all activities that occur under your account. You agree to notify us immediately of any unauthorized use of your account or any other security breach. We reserve the right to suspend or terminate accounts in our sole discretion.</p>
+                </div>
+                
+                <div class="term-point">
+                    <h3>4. User Responsibilities</h3>
+                    <p>You agree to use our services only for lawful purposes and in accordance with these Terms. You must not use our services to transmit any harmful code, engage in fraudulent activity, or interfere with the operation of our services. You are solely responsible for all content you submit and the consequences of such submission. Any prohibited use may result in termination of your access to our services without refund and may subject you to civil and criminal penalties.</p>
+                </div>
+                
+                <div class="term-point">
+                    <h3>5. Intellectual Property</h3>
+                    <p>All content on this website, including text, graphics, logos, images, and software, is the property of Greenhatchery Care or its content suppliers and protected by copyright laws. The compilation of all content on this site is our exclusive property. You may not reproduce, distribute, modify, create derivative works, publicly display, or otherwise use any content for commercial purposes without our express written permission. Limited personal, non-commercial use is permitted under fair use provisions.</p>
+                </div>
+                
+                <div class="term-point">
+                    <h3>6. Service Modifications</h3>
+                    <p>We reserve the right to modify, suspend, or discontinue any aspect of our services at any time, including service availability and feature sets. We may impose limits on certain features or restrict access to parts or all of the services without notice or liability. While we strive to maintain service availability, we cannot guarantee uninterrupted or error-free operation and are not liable for any service interruptions, deletions, or errors.</p>
+                </div>
+                
+                <div class="term-point">
+                    <h3>7. Payment Terms</h3>
+                    <p>For paid services, you agree to pay all applicable fees in accordance with the pricing and payment terms presented to you. Fees are non-refundable except as required by law or as otherwise specifically permitted in these Terms. We may change our pricing by providing notice as specified in these Terms. Late payments may result in service suspension or termination. You are responsible for all taxes associated with your purchase, and we may collect applicable tax when required.</p>
+                </div>
+                
+                <div class="term-point">
+                    <h3>8. Refund Policy</h3>
+                    <p>Refunds for services are provided at our sole discretion unless otherwise required by law. Digital products and services are generally non-refundable once delivered. For physical products, refunds may be available within 30 days of purchase if items are returned in original condition. Please contact our customer service team with refund requests. We reserve the right to refuse refunds if we believe abusive usage or fraud has occurred, as determined in our sole discretion.</p>
+                </div>
+                
+                <div class="term-point">
+                    <h3>9. Content Submission</h3>
+                    <p>By submitting content to our website (comments, reviews, photos, etc.), you grant us a non-exclusive, transferable, sub-licensable, royalty-free, worldwide license to use that content. You represent that you have all necessary rights to grant this license. We may modify, adapt, publish, or distribute such content at our discretion while giving you appropriate credit. Content violating our policies may be removed without notice.</p>
+                </div>
+                
+                <div class="term-point">
+                    <h3>10. Third-Party Links</h3>
+                    <p>Our service may contain links to third-party websites or services not owned or controlled by us. We have no control over, and assume no responsibility for, the content, privacy policies, or practices of any third-party sites. You acknowledge that we are not responsible or liable for any damage or loss caused by or in connection with use of any third-party content. We recommend reviewing the terms and policies of any third-party sites you visit.</p>
+                </div>
+                
+                <div class="term-point">
+                    <h3>11. Limitation of Liability</h3>
+                    <p>To the maximum extent permitted by law, Greenhatchery Care shall not be liable for any indirect, incidental, special, consequential, or punitive damages, including lost profits, data loss, or service interruption, arising from your use or inability to use our services. Our total liability for any claim related to these terms or our services shall not exceed the amount you paid to access the services in the preceding twelve months. Some jurisdictions do not allow limitations on implied warranties, so these limitations may not apply to you.</p>
+                </div>
+                
+                <div class="term-point">
+                    <h3>12. Disclaimer of Warranties</h3>
+                    <p>Our services are provided "as is" without warranty of any kind, either express or implied, including but not limited to warranties of merchantability, fitness for a particular purpose, or non-infringement. We do not warrant that the services will be uninterrupted, timely, secure, or error-free, that defects will be corrected, or that the site or server are free of viruses. No advice or information from us shall create any warranty not expressly stated in these terms.</p>
+                </div>
+                
+                <div class="term-point">
+                    <h3>13. Indemnification</h3>
+                    <p>You agree to indemnify and hold harmless Greenhatchery Care, its affiliates, officers, directors, employees, and agents from and against any claims, liabilities, damages, losses, costs, expenses, or fees arising from your use of the services, your violation of these terms, or your violation of any rights of any other person or entity. We reserve the right to assume exclusive defense and control of any matter subject to indemnification by you, at your expense.</p>
+                </div>
+                
+                <div class="term-point">
+                    <h3>14. Agreement Changes</h3>
+                    <p>We may revise these Terms at any time by updating this page. The most current version will always be posted on our website. By continuing to use our services after changes become effective, you agree to be bound by the revised Terms. If you disagree with the changes, you must discontinue use of our services. Material changes will be communicated through the email address associated with your account or via prominent notice on our website.</p>
+                </div>
+                
+                <div class="term-point">
+                    <h3>15. Termination</h3>
+                    <p>We may terminate or suspend access to our services immediately, without prior notice or liability, for any reason, including violation of these Terms. Upon termination, your right to use the services will cease immediately. Any termination will not relieve you of obligations to pay any outstanding fees. All provisions of these Terms which by their nature should survive termination shall survive, including ownership provisions, warranty disclaimers, indemnity, and limitations of liability.</p>
+                </div>
+                
+                <div class="term-point">
+                    <h3>16. Governing Law</h3>
+                    <p>These Terms shall be governed by and construed in accordance with the laws of the State of New York, without regard to its conflict of law provisions. The United Nations Convention on Contracts for the International Sale of Goods shall not apply. Any legal suit, action, or proceeding arising out of or related to these Terms or the services shall be instituted exclusively in the federal or state courts located in New York County, New York.</p>
+                </div>
+                
+                <div class="term-point">
+                    <h3>17. Dispute Resolution</h3>
+                    <p>Before filing any legal claim, you agree to attempt to resolve disputes by contacting customer service. If we cannot resolve a dispute informally, both parties agree to resolve any claims through final and binding arbitration, except as specifically set forth below. The arbitration will be conducted by the American Arbitration Association under its Commercial Arbitration Rules. Either party may bring a lawsuit solely for injunctive relief to stop unauthorized use or abuse of the services.</p>
+                </div>
+                
+                <div class="term-point">
+                    <h3>18. Force Majeure</h3>
+                    <p>We shall not be liable for any failure to perform our obligations where such failure results from circumstances beyond our reasonable control, including but not limited to acts of God, natural disasters, war, terrorism, riots, embargoes, acts of civil or military authorities, fire, floods, accidents, strikes, shortages of transportation facilities, fuel, energy, labor or materials, or Internet service provider failures or delays. In such event, we shall be excused from such performance to the extent needed.</p>
+                </div>
+                
+                <div class="term-point">
+                    <h3>19. Severability</h3>
+                    <p>If any provision of these Terms is found to be invalid or unenforceable by a court of competent jurisdiction, that provision will be deemed modified to the extent necessary to make it enforceable while preserving its original intent, or if modification is not possible, it will be severed from these Terms. The remaining provisions of these Terms will remain in full force and effect. The failure of either party to enforce any right or provision of these Terms will not be deemed a waiver of such right or provision.</p>
+                </div>
+                
+                <div class="term-point">
+                    <h3>20. Entire Agreement</h3>
+                    <p>These Terms constitute the entire agreement between you and Greenhatchery Care regarding your use of our services and supersede all prior agreements and understandings, whether written or oral, regarding the same subject matter. Any modifications to these Terms must be in writing and signed by both parties.</p>
+                </div>
+                
+                <div class="term-point">
+                    <h3>21. Contact Information</h3>
+                    <p>If you have any questions about these Terms, please contact us at:</p>
+                    <p>Email: support@greenhatcherycare.com</p>
+                    <p>Phone: (123) 456-7890</p>
+                    <p>Address: 181 Mercer Street, New York, NY 10012, United States</p>
+                </div>
+                
+                <div class="term-point">
+                    <h3>22. User Feedback</h3>
+                    <p>We welcome your feedback regarding our services and these Terms. Any feedback you provide will be deemed non-confidential and we will be free to use such feedback on an unrestricted basis. We appreciate your input and strive to improve our services based on user suggestions.</p>
+                </div>
+                
+                <div class="term-point">
+                    <h3>23. Privacy Policy</h3>
+                    <p>Your use of our services is also governed by our Privacy Policy, which outlines how we collect, use, and protect your personal information. By using our services, you consent to the collection and use of your information as described in our Privacy Policy.</p>
+                </div>
+                
+                <div class="term-point">
+                    <h3>24. Third-party Services</h3>
+                    <p>We may partner with third-party service providers to enhance our offerings. These third parties may have their own terms and conditions, and we encourage you to review them before engaging with their services. We are not responsible for the actions of these third parties.</p>
+                </div>
+                
+                <div class="term-point">
+                    <h3>25. Marketing Communications</h3>
+                    <p>By using our services, you agree to receive marketing communications from us. You can opt-out of receiving these communications at any time by following the unsubscribe instructions included in our emails or by contacting us directly.</p>
+                </div>
+                
+                <div class="term-point">
+                    <h3>26. User Conduct</h3>
+                    <p>You agree to conduct yourself in a respectful manner while using our services. Harassment, abusive language, or any form of discrimination will not be tolerated. We reserve the right to terminate your access to our services if you violate this policy.</p>
+                </div>
+                
+                <div class="term-point">
+                    <h3>27. Account Security</h3>
+                    <p>You are responsible for maintaining the confidentiality of your account information and for all activities that occur under your account. We recommend using strong passwords and changing them regularly. If you suspect any unauthorized access to your account, please notify us immediately.</p>
+                </div>
+                
+                <div class="term-point">
+                    <h3>28. Limitation of Use</h3>
+                    <p>Our services are intended for personal use only. You may not use our services for commercial purposes without our express written consent. Any unauthorized use may result in termination of your access to our services and potential legal action.</p>
+                </div>
+                
+                <div class="term-point">
+                    <h3>29. Compliance with Laws</h3>
+                    <p>You agree to comply with all applicable laws and regulations in connection with your use of our services. This includes, but is not limited to, laws related to intellectual property, privacy, and data protection.</p>
+                </div>
+                
+                <div class="term-point">
+                    <h3>30. No Waiver</h3>
+                    <p>The failure of Greenhatchery Care to enforce any right or provision of these Terms shall not be deemed a waiver of such right or provision. Any waiver of any provision of these Terms will be effective only if in writing and signed by an authorized representative of Greenhatchery Care.</p>
+                </div>
+                
+                <div class="term-point">
+                    <h3>31. Assignment</h3>
+                    <p>We may assign or transfer these Terms, in whole or in part, without notice to you. You may not assign or transfer these Terms or any rights or obligations under these Terms without our prior written consent.</p>
+                </div>
+                
+                <div class="term-point">
+                    <h3>32. Headings</h3>
+                    <p>The headings in these Terms are for convenience only and do not affect the interpretation of these Terms. They are not to be used to limit or construe the provisions of these Terms.</p>
+                </div>
+                
+                <div class="term-point">
+                    <h3>33. Electronic Communications</h3>
+                    <p>By using our services, you consent to receive electronic communications from us. We will communicate with you via email or by posting notices on our website. You agree that all agreements, notices, disclosures, and other communications that we provide to you electronically will satisfy any legal requirement that such communications be in writing.</p>
+                </div>
+                
+                <div class="term-point">
+                    <h3>34. Force Majeure</h3>
+                    <p>We shall not be liable for any failure to perform our obligations under these Terms if such failure results from circumstances beyond our reasonable control, including but not limited to acts of God, war, terrorism, riots, embargoes, acts of civil or military authorities, fire, floods, accidents, strikes, shortages of transportation facilities, fuel, energy, labor or materials, or Internet service provider failures or delays.</p>
+                </div>
+                
+                <div class="term-point">
+                    <h3>35. Feedback and Suggestions</h3>
+                    <p>We welcome your feedback and suggestions regarding our services. Any feedback you provide will be deemed non-confidential and we will be free to use such feedback on an unrestricted basis. We appreciate your input and strive to improve our services based on user suggestions.</p>
+                </div>
+                
+                <div class="term-point">
+                    <h3>36. User Disputes</h3>
+                    <p>In the event of a dispute between users, you agree to release Greenhatchery Care from any claims, demands, and damages of every kind and nature arising out of or in any way connected with such disputes. We encourage users to resolve disputes amicably.</p>
+                </div>
+                
+                <div class="term-point">
+                    <h3>37. Changes to Services</h3>
+                    <p>We reserve the right to change, modify, or discontinue any aspect of our services at any time without notice. We will not be liable to you or any third party for any modification, suspension, or discontinuation of our services.</p>
+                </div>
+                
+                <div class="term-point">
+                    <h3>38. User Content Responsibility</h3>
+                    <p>You are solely responsible for any content you submit or post on our services. We do not endorse or guarantee the accuracy, reliability, or quality of any user-generated content. We reserve the right to remove any content that violates these Terms or is otherwise objectionable.</p>
+                </div>
+                
+                <div class="term-point">
+                    <h3>39. No Partnership</h3>
+                    <p>Nothing in these Terms shall be construed to create a partnership, joint venture, or agency relationship between you and Greenhatchery Care. You agree that you do not have any authority to bind us in any respect.</p>
+                </div>
+                
+                <div class="term-point">
+                    <h3>40. Contact Information</h3>
+                    <p>If you have any questions about these Terms, please contact us at:</p>
+                    <p>Email: support@greenhatcherycare.com</p>
+                    <p>Phone: (123) 456-7890</p>
+                    <p>Address: 181 Mercer Street, New York, NY 10012, United States</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="py-6 bg-green-800 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p>&copy; 2023 Greenhatchery Care. All rights reserved.</p>
+            <p>Address: 181 Mercer Street, New York, NY 10012, United States</p>
+            <p>Phone: (123) 456-7890</p>
+        </div>
+    </footer>
+</body>
+</html>

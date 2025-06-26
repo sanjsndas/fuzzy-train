@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Greenhatchery Care</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-green: #3a5a40;
+            --secondary-green: #588157;
+            --light-green: #a3b18a;
+            --cream: #dad7cd;
+            --dark-text: #344e41;
+        }
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+            color: #333;
+            line-height: 1.6;
+            background-color: var(--cream);
+        }
+        
+        h1, h2, h3, h4 {
+            font-family: 'Playfair Display', serif;
+            color: var(--primary-green);
+        }
+        
+        .header-bg {
+            background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(58, 90, 64, 0.85)), url('p2.jpeg');
+            background-size: cover;
+            background-position: center;
+            min-height: 70vh;
+        }
+        
+        .nav-link {
+            position: relative;
+        }
+        
+        .nav-link:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: var(--light-green);
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover:after {
+            width: 100%;
+        }
+        
+        .contact-point {
+            margin-bottom: 2rem;
+        }
+        
+        .contact-point h3 {
+            color: var(--primary-green);
+            margin-bottom: 0.5rem;
+        }
+        
+        .contact-form {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 2rem;
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        .location-card {
+            transition: all 0.3s ease;
+        }
+        
+        .location-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-24 items-center">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <div class="flex items-center">
+                            <i class="fas fa-seedling text-4xl text-green-700 mr-2"></i>
+                            <span class="text-2xl font-bold text-green-800">Greenhatchery Care</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hidden md:ml-6 md:flex md:space-x-8">
+                    <a href="index.html" tabindex="0" class="nav-link px-3 py-2 text-lg font-medium text-gray-500 hover:text-green-700">Home</a>
+                    <a href="privacy.html" tabindex="0" class="nav-link px-3 py-2 text-lg font-medium text-gray-500 hover:text-green-700">Privacy</a>
+                    <a href="terms.html" tabindex="0" class="nav-link px-3 py-2 text-lg font-medium text-gray-500 hover:text-green-700">Terms & conditions</a>
+                    <a href="cookies.html" tabindex="0" class="nav-link px-3 py-2 text-lg font-medium text-gray-500 hover:text-green-700">Cookies</a>
+                    <a href="contact.html" tabindex="0" aria-current="page" class="nav-link px-3 py-2 text-lg font-medium text-green-800 border-b-2 border-green-500">Contact us</a>
+                </div>
+                <div class="-mr-2 flex items-center md:hidden">
+                    <button type="button" class="mobile-menu-button inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-green-500">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="mobile-menu hidden md:hidden">
+            <div class="px-2 pt=2 pb-3 space-y-1 sm:px-3">
+                <a href="index.html" tabindex="0" class="block px-3 py-2 text-base font-medium text-gray-500 hover:text-green-700 hover:bg-green-50 rounded-md">Home</a>
+                <a href="privacy.html" tabindex="0" class="block px-3 py-2 text-base font-medium text-gray-500 hover:text-green-700 hover:bg-green-50 rounded-md">Privacy</a>
+                <a href="terms.html" tabindex="0" class="block px-3 py-2 text-base font-medium text-gray-500 hover:text-green-700 hover:bg-green-50 rounded-md">Terms & conditions</a>
+                <a href="cookies.html" tabindex="0" class="block px-3 py-2 text-base font-medium text-gray-500 hover:text-green=700 hover:bg-green-50 rounded-md">Cookies</a>
+                <a href="contact.html" tabindex="0" aria-current="page" class="block px-3 py-2 text-base font-medium text-green-800 bg-green-50 rounded-md">Contact us</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="header-bg text-white flex items-center">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 text-center">
+            <h1 class="text-5xl md:text-7xl font-bold mb-6">Contact Us</h1>
+            <p class="text-xl md:text-2xl mb-8">We're here to help with all your gardening needs</p>
+        </div>
+    </header>
+
+    <!-- Contact Form Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px=4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <h2 class="text-3xl font-bold mb-6">Send Us a Message</h2>
+                    <p class="text-lg mb-8">Have questions about our services? Need gardening advice? Fill out the form below and our team will get back to you within 24-48 hours.</p>
+                    
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label for="name" class="block text-gray-700 mb-2">Full Name</label>
+                            <input type="text" id="name" name="name" required class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring=2 focus:ring-green-700">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email" class="block text-gray-700 mb-2">Email Address</label>
+                            <input type="email" id="email" name="email" required class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-700">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone" class="block text-gray-700 mb=2">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green=700">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject" class="block text-gray-700 mb=2">Subject</label>
+                            <select id="subject" name="subject" class="w-full p=3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-700">
+                                <option value="" disabled selected>Select a topic</option>
+                                <option value="consultation">Gardening Consultation</option>
+                                <option value="services">Service Inquiry</option>
+                                <option value="workshop">Workshop Booking</option>
+                                <option value="feedback">Feedback</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message" class="block text-gray-700 mb=2">Message</label>
+                            <textarea id="message" name="message" rows="6" required class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green=700"></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <div class="flex items-center">
+                                <input type="checkbox" id="newsletter" name="newsletter" class="h-4 w-4 text-green-700 focus:ring-green-700 border=gray-300 rounded">
+                                <label for="newsletter" class="ml-2 block text-gray-700">Sign up for our gardening newsletter</label>
+                            </div>
+                        </div>
+                        
+                        <button type="submit" class="w-full bg-green-700 text-white py-3 rounded-md hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green=700 focus:ring-offset-2">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+                
+                <div>
+                    <h2 class="text-3xl font-bold mb-6">Contact Information</h2>
+                    <div class= "grid gap-6">
+                        <div class="location-card bg-green-50 p-6 rounded-lg">
+                            <div class="flex items-start">
+                                <div class= "flex-shrink-0 bg-green-100 p-3 rounded-full mr-4">
+                                    <i class="fas fa-map-marker-alt text-green-700"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-bold mb-2">Our Headquarters</h3>
+                                    <p class="mb-1">181 Mercer Street</p>
+                                    <p>New York, NY 10012, United States</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="location-card bg-green-50 p-6 rounded-lg">
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 bg-green-100 p-3 rounded-full mr-4">
+                                    <i class="fas fa-phone-alt text-green-700"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-bold mb-2">Phone Numbers</h3>
+                                    <p class="mb-1">Main Office: (123) 456-7890</p>
+                                    <p>Customer Support: (123) 456-7891</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="location-card bg-green-50 p-6 rounded-lg">
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 bg-green-100 p-3 rounded-full mr-4">
+                                    <i class="fas fa-envelope text-green-700"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-bold mb-2">Email Addresses</h3>
+                                    <p class="mb-1">General Inquiries: info@greenhatcherycare.com</p>
+                                    <p>Support: support@greenhatcherycare.com</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="location-card bg-green-50 p-6 rounded-lg">
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 bg-green-100 p-3 rounded-full mr-4">
+                                    <i class="fas fa-clock text-green-700"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-bold mb-2">Business Hours</h3>
+                                    <p class="mb-1">Monday-Friday: 9:00 AM - 6:00 PM</p>
+                                    <p>Saturday: 10:00 AM - 4:00 PM</p>
+                                    <p>Sunday: Closed</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="location-card bg-green-50 p-6 rounded-lg">
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 bg-green-100 p-3 rounded-full mr-4">
+                                    <i class="fas fa-calendar-alt text-green-700"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-bold mb-2">Appointments</h3>
+                                    <p>For consultations and workshops, we recommend scheduling appointments in advance through our online booking system or by calling our office.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Content Section -->
+    <section class="py-20 bg-green-50">
+        <div class="max-w-7xl mx-auto px=4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-6">Frequently Asked Questions</h2>
+                <p class="text-xl">Find answers to common questions about our services and contact options</p>
+            </div>
+            
+            <div class="prose lg:prose-xl mx-auto">
+                <div class="contact-point">
+                    <h3>1. How can I reach customer support?</h3>
+                    <p>Our customer support team is available via phone at (123) 456-7891 during business hours. For after-hours inquiries, you can email support@greenhatcherycare.com and we'll respond within 24 hours. We also offer live chat support on our website during normal business hours. For complex issues requiring documentation, email is often the most efficient method to ensure proper tracking and follow-up.</p>
+                </div>
+                
+                <div class="contact-point">
+                    <h3>2. What's the best way to schedule a consultation?</h3>
+                    <p>You can schedule consultations through our online booking system, by phone, or by visiting our office in person. Online booking offers the most flexibility with real-time availability. For complex requests or group workshops, we recommend calling to discuss details with our scheduling coordinator who can ensure all your needs are properly accommodated and prepared for.</p>
+                </div>
+                
+                <div class="contact-point">
+                    <h3>3. Do you offer emergency gardening services?</h3>
+                    <p>We provide limited emergency services for existing clients facing critical plant health issues. Please call our emergency line at (123) 456-7892 for immediate assistance. Response times vary based on call volume and severity of the issue. Additional fees may apply for after-hours emergency services depending on your service plan level.</p>
+                </div>
+                
+                <div class="contact-point">
+                    <h3>4. How can I apply for a job at Greenhatchery Care?</h3>
+                    <p>We're always looking for passionate gardening professionals. Please send your resume and cover letter to careers@greenhatcherycare.com with the position title in the subject line. Current openings are listed on our Careers page. The hiring process typically includes initial screening, skills assessment, and multiple interview rounds with our management team.</p>
+                </div>
+                
+                <div class="contact-point">
+                    <h3>5. Where can I send business partnership proposals?</h3>
+                    <p>Business partnership inquiries should be directed to partnerships@greenhatcherycare.com and include details about your organization, proposed collaboration, and potential benefits. Our business development team reviews all proposals monthly. Please allow 4-6 weeks for response to unsolicited partnership proposals.</p>
+                </div>
+                
+                <div class="contact-point">
+                    <h3>6. How do I provide feedback about my experience?</h3>
+                    <p>We welcome your feedback! You can provide feedback through our contact form, or by emailing us directly at feedback@greenhatcherycare.com. We value your input and use it to improve our services. Additionally, we encourage you to leave reviews on our social media pages or Google Business listing, as this helps other customers make informed decisions.</p>
+                </div>
+                
+                <div class="contact-point">
+                    <h3>7. Can I change my appointment after booking?</h3>
+                    <p>Yes, you can change your appointment by logging into your account on our website or by calling our office. We recommend making changes at least 24 hours in advance to avoid any cancellation fees. If you need to reschedule, our team will work with you to find a new time that fits your schedule.</p>
+                </div>
+                
+                <div class="contact-point">
+                    <h3>8. What should I do if I have a complaint?</h3>
+                    <p>If you have a complaint, please contact our customer service team directly at support@greenhatcherycare.com or call (123) 456-7891. We take all complaints seriously and aim to resolve issues promptly. Please provide as much detail as possible to help us address your concerns effectively.</p>
+                </div>
+                
+                <div class="contact-point">
+                    <h3>9. Are your services available in my area?</h3>
+                    <p>We offer services in various regions, but availability may vary based on your location. Please check our website for a list of service areas or contact us directly to inquire about your specific location. Our team can provide information on service availability and any potential travel fees that may apply.</p>
+                </div>
+                
+                <div class="contact-point">
+                    <h3>10. How do I unsubscribe from your newsletter?</h3>
+                    <p>You can unsubscribe from our newsletter by clicking the "unsubscribe" link at the bottom of any email you receive from us. Alternatively, you can contact us at support@greenhatcherycare.com to request removal from our mailing list. We respect your privacy and will process your request promptly.</p>
+                </div>
+                
+                <div class="contact-point">
+                    <h3>11. What types of gardening services do you offer?</h3>
+                    <p>We offer a wide range of gardening services, including landscape design, maintenance, pest control, and educational workshops. Our team can assist with both residential and commercial projects. For a complete list of services, please visit our Services page or contact us for a personalized consultation.</p>
+                </div>
+                
+                <div class="contact-point">
+                    <h3>12. Do you provide gardening supplies?</h3>
+                    <p>Yes, we offer a selection of gardening supplies, including soil, seeds, tools, and fertilizers. These can be purchased through our online store or at our physical location. We also provide recommendations for high-quality products based on your gardening needs and preferences.</p>
+                </div>
+                
+                <div class="contact-point">
+                    <h3>13. Can I book a workshop for a group?</h3>
+                    <p>Absolutely! We offer group workshops for various gardening topics. Please contact us to discuss your group's needs, and we can arrange a customized workshop experience. Group rates may apply, and we can accommodate different skill levels and interests.</p>
+                </div>
+                
+                <div class="contact-point">
+                    <h3>14. How do I stay updated on your events and promotions?</h3>
+                    <p>To stay updated on our events and promotions, subscribe to our newsletter and follow us on social media. We regularly post updates about upcoming workshops, sales, and gardening tips. You can also check our website for the latest news and announcements.</p>
+                </div>
+                
+                <div class="contact-point">
+                    <h3>15. What is your policy on cancellations?</h3>
+                    <p>Our cancellation policy requires at least 24 hours' notice for any appointment changes or cancellations. Failure to provide adequate notice may result in a cancellation fee. We understand that emergencies happen, and we will do our best to accommodate your needs in such cases.</p>
+                </div>
+                
+                <div class="contact-point">
+                    <h3>16. Do you offer gift cards?</h3>
+                    <p>Yes, we offer gift cards that can be purchased through our website or at our physical location. Gift cards can be used for any of our services or products. They make a great gift for gardening enthusiasts and can be customized for any occasion.</p>
+                </div>
+                
+                <div class="contact-point">
+                    <h3>17. How can I learn more about gardening?</h3>
+                    <p>We provide a variety of resources for learning about gardening, including blog posts, workshops, and one-on-one consultations. Our website features a blog with tips and advice for gardeners of all levels. Additionally, our team is always available to answer questions and provide guidance.</p>
+                </div>
+                
+                <div class="contact-point">
+                    <h3>18. Can I follow you on social media?</h3>
+                    <p>Yes! We are active on several social media platforms, including Facebook, Instagram, and Twitter. Follow us for gardening tips, updates on our services, and community events. We love engaging with our followers and sharing our passion for gardening.</p>
+                </div>
+                
+                <div class="contact-point">
+                    <h3>19. What should I do if I forget my account password?</h3>
+                    <p>If you forget your password, you can reset it by clicking the "Forgot Password?" link on the login page. Follow the instructions to receive a password reset email. If you encounter any issues, please contact our support team for assistance.</p>
+                </div>
+                
+                <div class="contact-point">
+                    <h3>20. How do I provide a testimonial?</h3>
+                    <p>We love hearing from our satisfied customers! You can provide a testimonial by emailing us at testimonials@greenhatcherycare.com or by leaving a review on our Google Business page. Your feedback helps us improve and encourages others to choose our services.</p>
+                </div>
+                
+                <div class="contact-point">
+                    <h3>21. Are your services eco-friendly?</h3>
+                    <p>Yes, we prioritize eco-friendly practices in all our services. We use organic products whenever possible and promote sustainable gardening techniques. Our team is trained in environmentally responsible methods to ensure the health of your garden and the planet.</p>
+                </div>
+                
+                <div class="contact-point">
+                    <h3>22. Can I request a specific gardener for my service?</h3>
+                    <p>While we cannot guarantee a specific gardener for every appointment, we will do our best to accommodate your request. If you have a preferred gardener, please mention it when booking your service, and we will try to assign them to your appointment.</p>
+                </div>
+                
+                <div class="contact-point">
+                    <h3>23. What if I have a special request for my gardening service?</h3>
+                    <p>We welcome special requests and will do our best to accommodate them. Please discuss any specific needs or preferences with our team when booking your service. We aim to provide personalized solutions that meet your gardening goals.</p>
+                </div>
+                
+                <div class="contact-point">
+                    <h3>24. Do you offer seasonal gardening services?</h3>
+                    <p>Yes, we offer seasonal gardening services to help you prepare your garden for each season. This includes spring planting, summer maintenance, fall clean-up, and winter preparation. Our team can provide tailored services based on your garden's needs throughout the year.</p>
+                </div>
+                
+                <div class="contact-point">
+                    <h3>25. How do I know if my plants are healthy?</h3>
+                    <p>Healthy plants typically have vibrant leaves, strong stems, and no signs of pests or disease. If you're unsure about the health of your plants, our team can provide a consultation to assess their condition and recommend appropriate care. Regular monitoring and maintenance are key to keeping your plants thriving.</p>
+                </div>
+                
+                <div class="contact-point">
+                    <h3>26. Can I bring my children to workshops?</h3>
+                    <p>Yes, we encourage families to participate in our workshops! Many of our sessions are designed to be family-friendly and educational. Please check the workshop description for age recommendations, and feel free to contact us if you have any questions about bringing children.</p>
+                </div>
+                
+                <div class="contact-point">
+                    <h3>27. What types of plants do you recommend for beginners?</h3>
+                    <p>For beginners, we recommend starting with easy-to-grow plants such as succulents, herbs, and annual flowers. These plants are generally low-maintenance and can thrive in various conditions. Our team can provide personalized recommendations based on your environment and gardening goals.</p>
+                </div>
+                
+                <div class="contact-point">
+                    <h3>28. How can I improve my soil quality?</h3>
+                    <p>Improving soil quality can be achieved through practices such as adding organic matter, using mulch, and testing soil pH. Our team can provide soil testing services and recommend amendments to enhance your soil's fertility and structure for optimal plant growth.</p>
+                </div>
+                
+                <div class="contact-point">
+                    <h3>29. What are the benefits of native plants?</h3>
+                    <p>Native plants are adapted to local climates and soils, making them easier to care for and more resilient. They also support local wildlife, including pollinators, and require less water and maintenance compared to non-native species. Incorporating native plants into your garden can enhance biodiversity and sustainability.</p>
+                </div>
+                
+                <div class="contact-point">
+                    <h3>30. How do I prevent pests in my garden?</h3>
+                    <p>Preventing pests involves practices such as crop rotation, companion planting, and maintaining healthy soil. Regular monitoring and early intervention are key to managing pest populations. Our team can provide integrated pest management solutions tailored to your garden's specific needs.</p>
+                </div>
+                
+                <div class="contact-point">
+                    <h3>31. Can I grow vegetables in containers?</h3>
+                    <p>Yes, many vegetables can be successfully grown in containers, making them ideal for small spaces or urban gardening. Choose containers with adequate drainage and select suitable soil and plant varieties. Our team can provide guidance on container gardening techniques and plant selection.</p>
+                </div>
+                
+                <div class="contact-point">
+                    <h3>32. What is the best time to plant?</h3>
+                    <p>The best time to plant varies based on the type of plant and your local climate. Generally, spring is ideal for most annuals and perennials, while fall is suitable for planting trees and shrubs. Our team can provide specific planting schedules based on your garden's needs and local conditions.</p>
+                </div>
+                
+                <div class="contact-point">
+                    <h3>33. How do I care for my lawn?</h3>
+                    <p>Caring for your lawn involves regular mowing, watering, and fertilization. It's important to choose the right grass type for your region and to follow best practices for lawn maintenance. Our team can provide lawn care services and advice tailored to your specific lawn conditions.</p>
+                </div>
+                
+                <div class="contact-point">
+                    <h3>34. What are the signs of overwatering?</h3>
+                    <p>Signs of overwatering include yellowing leaves, wilting, and root rot. It's important to monitor your plants and adjust your watering schedule based on weather conditions and soil moisture levels. Our team can help assess your watering practices and provide recommendations for proper irrigation.</p>
+                </div>
+                
+                <div class="contact-point">
+                    <h3>35. How can I attract pollinators to my garden?</h3>
+                    <p>Attracting pollinators involves planting a variety of flowering plants that bloom at different times throughout the season. Native plants, herbs, and flowers with open shapes are particularly effective. Our team can provide guidance on creating a pollinator-friendly garden that supports local ecosystems.</p>
+                </div>
+                
+                <div class="contact-point">
+                    <h3>36. What should I do if my plants are wilting?</h3>
+                    <p>Wilting can be a sign of underwatering, overwatering, or disease. Assess the soil moisture and check for signs of pests or disease. If you're unsure, our team can provide a consultation to diagnose the issue and recommend appropriate care to revive your plants.</p>
+                </div>
+                
+                <div class="contact-point">
+                    <h3>37. How do I prune my plants?</h3>
+                    <p>Pruning involves removing dead or diseased branches and shaping plants for better growth. The best time to prune varies by plant type. Our team can provide pruning services or workshops to teach you proper techniques for maintaining healthy plants.</p>
+                </div>
+                
+                <div class="contact-point">
+                    <h3>38. Can I grow herbs indoors?</h3>
+                    <p>Yes, many herbs can be successfully grown indoors with adequate light and care. Choose a sunny windowsill or use grow lights to provide sufficient light. Our team can recommend suitable herbs and provide tips for indoor gardening success.</p>
+                </div>
+                
+                <div class="contact-point">
+                    <h3>39. What are the benefits of composting?</h3>
+                    <p>Composting reduces waste and provides nutrient-rich soil for your garden. It improves soil structure, enhances moisture retention, and supports healthy plant growth. Our team can provide composting workshops and resources to help you get started.</p>
+                </div>
+                
+                <div class="contact-point">
+                    <h3>40. How can I get involved in community gardening?</h3>
+                    <p>Getting involved in community gardening can be a rewarding experience. Look for local community gardens or gardening clubs in your area. Our team can provide information on community gardening initiatives and how to participate in local gardening events.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="py-6 bg-green-800 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p>&copy; 2023 Greenhatchery Care. All rights reserved.</p>
+            <p>Address: 181 Mercer Street, New York, NY 10012, United States</p>
+            <p>Phone: (123) 456-7890</p>
+        </div>
+    </footer>
+</body>
+</html>

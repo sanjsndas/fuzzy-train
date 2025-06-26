@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greenhatchery Care | Where green ideas are born</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-green: #3a5a40;
+            --secondary-green: #588157;
+            --light-green: #a3b18a;
+            --cream: #dad7cd;
+            --dark-text: #344e41;
+        }
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+            color: #333;
+            line-height: 1.6;
+            background-color: var(--cream);
+        }
+        
+        h1, h2, h3, h4 {
+            font-family: 'Playfair Display', serif;
+            color: var(--primary-green);
+        }
+        
+        .header-bg {
+            background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(58, 90, 64, 0.85)), url('p2.jpeg');
+            background-size: cover;
+            background-position: center;
+            min-height: 70vh;
+        }
+        
+        .nav-link {
+            position: relative;
+        }
+        
+        .nav-link:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: var(--light-green);
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover:after {
+            width: 100%;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        .testimonial-card {
+            transition: all 0.3s ease;
+        }
+        
+        .testimonial-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2);
+        }
+        
+        .leaf-pattern {
+            background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0h20v20H0z' fill='none'/%3E%3Cpath d='M3 3a4 4 0 0 0 0 8c0 2.209 1.791 4 4 4a4 4 0 0 0 8 0 4 4 0 0 0 0-8 4 4 0 0 0-8 0 4 4 0 0 0-4-4zm0 5a1 1 0 1 1 0-2 1 1 0 0 1 0 2zm8 0a1 1 0 1 1 0-2 1 1 0 0 1 0 2zm0 8a1 1 0 1 1 0-2 1 1 0 0 1 0 2z' fill='%233a5a40' fill-opacity='0.2'/%3E%3C/svg%3E");
+            opacity: 0.6;
+        }
+
+        .blog-card:hover .blog-title {
+            color: var(--secondary-green);
+        }
+
+        .gallery-item {
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.03);
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .gallery-item img {
+            transition: transform 0.5s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-24 items-center">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <div class="flex items-center">
+                            <i class="fas fa-seedling text-4xl text-green-700 mr-2"></i>
+                            <span class="text-2xl font-bold text-green-800">Greenhatchery Care</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hidden md:ml-6 md:flex md:space-x-8">
+                    <a href="index.html" tabindex="0" aria-current="page" class="nav-link px-3 py-2 text-lg font-medium text-green-800 border-b-2 border-green-500">Home</a>
+                    <a href="privacy.html" tabindex="0" class="nav-link px-3 py-2 text-lg font-medium text-gray-500 hover:text-green-700">Privacy</a>
+                    <a href="terms.html" tabindex="0" class="nav-link px-3 py-2 text-lg font-medium text-gray-500 hover:text-green-700">Terms & conditions</a>
+                    <a href="cookies.html" tabindex="0" class="nav-link px-3 py-2 text-lg font-medium text-gray-500 hover:text-green-700">Cookies</a>
+                    <a href="contact.html" tabindex="0" class="nav-link px-3 py-2 text-lg font-medium text-gray-500 hover:text-green-700">Contact us</a>
+                </div>
+                <div class="-mr-2 flex items-center md:hidden">
+                    <button type="button" class="mobile-menu-button inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-green-500">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="mobile-menu hidden md:hidden">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="index.html" tabindex="0" aria-current="page" class="block px-3 py-2 text-base font-medium text-green-800 bg-green-50 rounded-md">Home</a>
+                <a href="privacy.html" tabindex="0" class="block px-3 py-2 text-base font-medium text-gray-500 hover:text-green-700 hover:bg-green-50 rounded-md">Privacy</a>
+                <a href="terms.html" tabindex="0" class="block px-3 py-2 text-base font-medium text-gray-500 hover:text-green-700 hover:bg-green-50 rounded-md">Terms & conditions</a>
+                <a href="cookies.html" tabindex="0" class="block px-3 py-2 text-base font-medium text-gray-500 hover:text-green-700 hover:bg-green-50 rounded-md">Cookies</a>
+                <a href="contact.html" tabindex="0" class="block px-3 py-2 text-base font-medium text-gray-500 hover:text-green-700 hover:bg-green-50 rounded-md">Contact us</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="header-bg text-white flex items-center">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 text-center">
+            <h1 class="text-5xl md:text-7xl font-bold mb-6">Where green ideas are born</h1>
+            <p class="text-xl md:text-2xl mb-8">Nurturing your garden dreams with expert care from conception to cultivation. At Greenhatchery Care, we combine decades of horticultural expertise with innovative gardening techniques to help both beginners and experienced gardeners create thriving green spaces. Our comprehensive services span garden design, plant selection, maintenance programs, and educational resources to support your gardening journey at every stage.</p>
+            <div class="space-y-4 sm:space-y-0 sm:space-x-4">
+                <a href="#services" class="inline-block px-8 py-4 bg-white text-green-800 font-bold rounded-lg hover:bg-opacity-90 transition duration-300">Our Services</a>
+                <a href="#consult" class="inline-block px-8 py-4 border-2 border-white text-white font-bold rounded-lg hover:bg-white hover:bg-opacity-10 transition duration-300">Book Consultation</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Introduction Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-6">Welcome to Greenhatchery Care</h2>
+                <p class="text-xl max-w-4xl mx-auto">We specialize in helping garden starters, nurseries, and beginners create thriving green spaces with our expert consultancy services. Founded in 2010, Greenhatchery Care has grown from a small local gardening service to a nationally recognized horticultural consultancy with a team of 15 expert gardeners and landscape designers. Our philosophy centers on sustainable, environmentally-friendly practices that promote biodiversity while creating beautiful, functional outdoor spaces.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-green-50 p-8 rounded-lg text-center">
+                    <i class="fas fa-leaf text-5xl text-green-700 mb-4"></i>
+                    <h3 class="text-2xl font-bold mb-4">Expert Guidance</h3>
+                    <p class="text-gray-700">Our team of horticulturists provides personalized advice tailored to your specific garden needs and climate conditions. With certifications in organic gardening, permaculture design, and native plant cultivation, our experts bring a wealth of knowledge to every consultation. Whether you're starting from scratch or looking to revitalize an existing garden, we'll guide you through every decision to ensure success.</p>
+                    <a href="#services" class="inline-block mt-4 text-green-700 font-semibold hover:underline">Learn more →</a>
+                </div>
+                <div class="bg-green-50 p-8 rounded-lg text-center">
+                    <i class="fas fa-seedling text-5xl text-green-700 mb-4"></i>
+                    <h3 class="text-2xl font-bold mb-4">Plant Selection</h3>
+                    <p class="text-gray-700">We help you choose the right plants for your space, considering factors like sunlight, soil type, and your aesthetic preferences. Our extensive plant database includes detailed information on thousands of species, cultivars, and hybrids suitable for various growing conditions. We'll recommend plants that not only look beautiful but will thrive in your specific microclimate, creating a sustainable garden that requires minimal intervention while providing maximum visual impact.</p>
+                    <a href="#services" class="inline-block mt-4 text-green-700 font-semibold hover:underline">Learn more →</a>
+                </div>
+                <div class="bg-green-50 p-8 rounded-lg text-center">
+                    <i class="fas fa-tint text-5xl text-green-700 mb-4"></i>
+                    <h3 class="text-2xl font-bold mb-4">Sustainable Practices</h3>
+                    <p class="text-gray-700">Learn environmentally friendly gardening techniques that conserve water and promote biodiversity. Our sustainable methods include rainwater harvesting systems, composting programs, integrated pest management, and organic fertilization strategies. We'll teach you how to create a garden ecosystem that supports local wildlife while reducing your environmental footprint—methods that not only benefit the planet but also create healthier plants and reduce maintenance needs.</p>
+                    <a href="#services" class="inline-block mt-4 text-green-700 font-semibold hover:underline">Learn more →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-green-800 text-white leaf-pattern">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-6">Our Services</h2>
+                <p class="text-xl max-w-4xl mx-auto">From small balcony gardens to extensive nursery setups, we provide comprehensive solutions for all your gardening needs. Our services range from one-time consultations to ongoing garden maintenance programs, ensuring you get exactly the level of support you need. Below are our primary service categories, each customizable to match your specific requirements, budget, and time constraints.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white text-gray-800 rounded-lg overflow-hidden shadow-lg service-card transition duration-500 ease-in-out">
+                    <div class="h-48 overflow-hidden">
+                        <img src="s1.jpeg" alt="Garden Design" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-4 text-green-700">Complete Garden Design</h3>
+                        <p class="mb-4">Transform your outdoor space into a beautiful, functional garden with our custom design services. Our comprehensive design packages include everything needed to bring your vision to life:</p>
+                        <ul class="mb-6 pl-5 space-y-2">
+                            <li class="list-disc">Detailed site analysis evaluating sunlight patterns, soil quality, drainage, and existing vegetation</li>
+                            <li class="list-disc">Custom plant selections based on your preferences, maintenance level, and local ecosystem considerations</li>
+                            <li class="list-disc">Hardscape design including pathways, seating areas, water features, and garden structures</li>
+                            <li class="list-disc">Seasonal planting plans ensuring year-round color and interest in your garden</li>
+                            <li class="list-disc">3D visualizations allowing you to preview your future garden before any work begins</li>
+                            <li class="list-disc">Detailed implementation guide with step-by-step instructions for bringing the design to life</li>
+                        </ul>
+                        <div class="bg-green-50 p-4 rounded mb-4">
+                            <h4 class="font-bold mb-2">Investment: Starting at $1,200</h4>
+                            <p>Design packages typically take 2-4 weeks to complete depending on garden size and complexity.</p>
+                        </div>
+                        <a href="#consult" class="text-green-700 font-semibold hover:underline">Schedule a consultation →</a>
+                    </div>
+                </div>
+                
+                <div class="bg-white text-gray-800 rounded-lg overflow-hidden shadow-lg service-card transition duration-500 ease-in-out">
+                    <div class="h-48 overflow-hidden">
+                        <img src="s2.jpeg" alt="Plant Care" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6"> 
+                         <h3 class="text-2xl font-bold mb-4 text-green-700">Plant Care Programs</h3>
+                        <p class="mb-4">Keep your plants thriving with our customized maintenance programs tailored to your garden's needs. Our care programs adapt to seasonal changes and plant growth patterns to provide optimal support:</p>
+                        <ul class="mb-6 pl-5 space-y-2">
+                            <li class="list-disc">Personalized watering schedules accounting for plant types, soil conditions, and local weather patterns</li>
+                            <li class="list-disc">Seasonal fertilization plans using organic amendments to promote healthy growth</li>
+                            <li class="list-disc">Pruning techniques tailored to each plant's growth habits and seasonal needs</li>
+                            <li class="list-disc">Integrated pest management strategies to minimize chemical use while effectively controlling pests</li>
+                            <li class="list-disc">Regular health assessments to catch issues early and adjust care plans as needed</li>
+                        </ul>
+                        <div class="bg-green-50 p-4 rounded mb-4">
+                            <h4 class="font-bold mb-2">Investment: Starting at $300/month</h4>
+                            <p>Maintenance programs are customizable based on garden size and plant variety.</p>
+                        </div>
+                        <a href="#consult" class="text-green-700 font-semibold hover:underline">Learn more →</a>
+                    </div>
+                </div>
+                
+                <div class="bg-white text-gray-800 rounded-lg overflow-hidden shadow-lg service-card transition duration-500 ease-in-out">
+                    <div class="h-48 overflow-hidden">
+                        <img src="s3.jpeg" alt="Workshops" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-4 text-green-700">Educational Workshops</h3>
+                        <p class="mb-4">Grow your gardening knowledge with our hands-on workshops taught by experienced horticulturists. Our workshops cover a variety of topics, ensuring there's something for everyone:</p>
+                        <ul class="mb-6 pl-5 space-y-2">
+                            <li class="list-disc">Beginners gardening: Learn the basics of soil health, plant selection, and garden design</li>
+                            <li class="list-disc">Sustainable practices: Discover eco-friendly gardening techniques that benefit the environment</li>
+                            <li class="list-disc">Propagation techniques: Master the art of plant propagation through seeds, cuttings, and division</li>
+                            <li class="list-disc">Seasonal gardening: Understand how to adapt your gardening practices to changing seasons</li>
+                        </ul>
+                        <div class="bg-green-50 p-4 rounded mb-4">
+                            <h4 class="font-bold mb-2">Investment: $75 per workshop</h4>
+                            <p>Workshops typically last 2-3 hours and include all materials needed for hands-on learning.</p>
+                        </div>
+                        <a href="#consult" class="text-green-700 font-semibold hover:underline">Join a workshop →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-6">Gallery</h2>
+                <p class="text-xl max-w-4xl mx-auto">Explore our gallery to see the beautiful gardens we've created and maintained. Each image showcases our commitment to quality and our passion for gardening.</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="gallery-item">
+                    <img src="g1.jpeg" alt="Garden 1" class="w-full h-full object-cover">
+                </div>
+                <div class="gallery-item">
+                    <img src="g2.jpeg" alt="Garden 2" class="w-full h-full object-cover">
+                </div>
+                <div class="gallery-item">
+                    <img src="g3.jpeg" alt="Garden 3" class="w-full h-full object-cover">
+                </div>
+                <div class="gallery-item">
+                    <img src="g4.jpeg" alt="Garden 4" class="w-full h-full object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-6">Gardening Blog</h2>
+                <p class="text-xl max-w-4xl mx-auto">Stay updated with the latest gardening tips, trends, and insights from our experts. Our blog features articles that cover a wide range of topics, from seasonal gardening advice to in-depth plant care guides. Whether you're a novice gardener or a seasoned pro, our blog is designed to inspire and educate.</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-green-50 p-6 rounded-lg shadow-lg blog-card">
+                    <h3 class="text-2xl font-bold mb-4 blog-title">5 Essential Tips for New Gardeners</h3>
+                    <p class="mb-4">Starting a garden can be overwhelming, but with the right tips, you can set yourself up for success. In this article, we share five essential tips that every new gardener should know to cultivate a thriving garden.</p>
+                    <a href="#" class="text-green-700 font-semibold hover:underline">Read more →</a>
+                </div>
+                <div class="bg-green-50 p-6 rounded-lg shadow-lg blog-card">
+                    <h3 class="text-2xl font-bold mb-4 blog-title">The Benefits of Native Plants</h3>
+                    <p class="mb-4">Native plants are not only beautiful but also beneficial for your local ecosystem. Discover the advantages of incorporating native species into your garden and how they can enhance biodiversity.</p>
+                    <a href="#" class="text-green-700 font-semibold hover:underline">Read more →</a>
+                </div>
+                <div class="bg-green-50 p-6 rounded-lg shadow-lg blog-card">
+                    <h3 class="text-2xl font-bold mb-4 blog-title">Creating a Sustainable Garden</h3>
+                    <p class="mb-4">Learn how to create a sustainable garden that conserves resources and supports wildlife. This article covers practical steps you can take to make your gardening practices more eco-friendly.</p>
+                    <a href="#" class="text-green-700 font-semibold hover:underline">Read more →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Consultation Section -->
+    <section id="consult" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-6">Consultation Services</h2>
+                <p class="text-xl max-w-3xl mx-auto">Let our experts guide you through every step of your gardening journey. Our consultation services are designed to provide you with the knowledge and support you need to succeed.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-2xl font-bold mb-6 text-green-700">Our Consultation Approach</h3>
+                    
+                    <div class="space-y-8">
+                        <div class="flex">
+                            <div class="flex-shrink-0">
+                                <div class="flex items-center justify-center h-12 w-12 rounded-md bg-green-100 text-green-700">
+                                    <i class="fas fa-search"></i>
+                                </div>
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="text-lg font-bold text-green-800">Initial Assessment</h4>
+                                <p class="mt-2 text-gray-600">We begin with a thorough evaluation of your space, considering sunlight exposure, soil conditions, and existing vegetation. This assessment helps us understand your unique gardening challenges and opportunities.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex">
+                            <div class="flex-shrink-0">
+                                <div class="flex items-center justify-center h-12 w-12 rounded-md bg-green-100 text-green-700">
+                                    <i class="fas fa-pencil-alt"></i>
+                                </div>
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="text-lg font-bold text-green-800">Customized Plan</h4>
+                                <p class="mt-2 text-gray-600">Based on the assessment, we create a tailored gardening plan that aligns with your goals and preferences. This plan includes plant recommendations, care schedules, and design ideas to help you achieve your vision.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex">
+                            <div class="flex-shrink-0">
+                                <div class="flex items-center justify-center h-12 w-12 rounded-md bg-green-100 text-green-700">
+                                    <i class="fas fa-hand-holding-seedling"></i>
+                                </div>
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="text-lg font-bold text-green-800">Ongoing Support</h4>
+                                <p class="mt-2 text-gray-600">We provide continuous support and adjustments to your plan as your garden evolves and grows. Our team is always available to answer questions and provide guidance as needed.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-2xl font-bold mb-6 text-green-700">Book Your Consultation</h3>
+                    <p class="mb-4">Ready to start your gardening journey? Fill out the form below to schedule a consultation with our experts. We look forward to helping you create the garden of your dreams!</p>
+                    <form action="#" method="POST" class="space-y-4">
+                        <input type="text" name="name" placeholder="Your Name" required class="w-full p-3 border border-gray-300 rounded-md">
+                        <input type="email" name="email" placeholder="Your Email" required class="w-full p-3 border border-gray-300 rounded-md">
+                        <textarea name="message" rows="4" placeholder="Your Message" required class="w-full p-3 border border-gray-300 rounded-md"></textarea>
+                        <button type="submit" class="w-full bg-green-700 text-white py-3 rounded-md hover:bg-green-600">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="py-20 bg-green-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-6">About Us</h2>
+                <p class="text-xl max-w-3xl mx-auto">At Greenhatchery Care, we believe in nurturing new gardens like incubators. Our mission is to empower individuals to cultivate their green spaces with confidence and knowledge. We are passionate about gardening and dedicated to sharing our expertise with our clients.</p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="text-2xl font-bold mb-4">Our Vision</h3>
+                    <p>We envision a world where everyone has access to the knowledge and resources needed to create beautiful, sustainable gardens. Our team is dedicated to sharing our expertise and passion for gardening with our clients, helping them to realize their gardening dreams.</p>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-bold mb-4">Our Team</h3>
+                    <p>Our team consists of experienced horticulturists, landscape designers, and gardening enthusiasts who are committed to helping you succeed in your gardening endeavors. With a diverse range of backgrounds and specialties, we work collaboratively to provide the best possible service to our clients.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feedback Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-6">Client Feedback</h2>
+                <p class="text-xl max-w-3xl mx-auto">Hear from our satisfied clients about their experiences with Greenhatchery Care. We take pride in our work and strive to exceed our clients' expectations.</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-green-50 p-6 rounded-lg shadow-lg testimonial-card">
+                    <p class="italic">"Greenhatchery Care transformed my backyard into a beautiful garden. Their team was knowledgeable and supportive throughout the process!"</p>
+                    <p class="mt-4 font-bold">- Sarah J.</p>
+                </div>
+                <div class="bg-green-50 p-6 rounded-lg shadow-lg testimonial-card">
+                    <p class="italic">"I learned so much from their workshops! The hands-on experience was invaluable for my gardening journey."</p>
+                    <p class="mt-4 font-bold">- Mark T.</p>
+                </div>
+                <div class="bg-green-50 p-6 rounded-lg shadow-lg testimonial-card">
+                    <p class="italic">"The consultation service was fantastic! They helped me choose the right plants for my space and provided ongoing support."</p>
+                    <p class="mt-4 font-bold">- Emily R.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tips Section -->
+    <section class="py-20 bg-green-800 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-6">Gardening Tips</h2>
+                <p class="text-xl max-w-3xl mx-auto">Here are some essential tips to help you maintain a thriving garden:</p>
+            </div>
+            <ul class="list-disc list-inside space-y-4">
+                <li>Choose the right plants for your climate and soil type to ensure they thrive.</li>
+                <li>Water your plants early in the morning or late in the evening to reduce evaporation and stress on the plants.</li>
+                <li>Use organic fertilizers to promote healthy growth and improve soil quality.</li>
+                <li>Regularly check for pests and diseases to catch issues early and prevent damage.</li>
+                <li>Rotate your crops each season to maintain soil health and reduce pest buildup.</li>
+                <li>Mulch around your plants to retain moisture, suppress weeds, and improve soil quality.</li>
+                <li>Keep a gardening journal to track your plants' progress and learn from your experiences.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Disclaimer Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-2xl font-bold mb-6">Disclaimer</h2>
+            <p class="text-lg">The information provided by Greenhatchery Care is for general informational purposes only. We do not guarantee specific results and recommend consulting with a professional for personalized advice. Always consider local regulations and guidelines when implementing gardening practices.</p>
+        </div>
+    </section>
+
+    <!-- Customer Satisfaction Section -->
+    <section class="py-20 bg-green-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-2xl font-bold mb-6">Customer Satisfaction</h2>
+            <p class=" text-lg">At Greenhatchery Care, we prioritize customer satisfaction. Your feedback is essential to us, and we strive to improve our services continuously. We are committed to providing the highest quality of service and ensuring that our clients are happy with their gardening experiences.</p>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="py-6 bg-green-800 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p>&copy; 2023 Greenhatchery Care. All rights reserved.</p>
+            <p>Address: 181 Mercer Street, New York, NY 10012, United States</p>
+        </div>
+    </footer>
+</body>
+</html>
